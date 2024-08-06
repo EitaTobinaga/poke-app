@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [food, setFood] = useState('食べ物');
+  async function getRecipe(){
+    const a = await axios.get('https://dummyjson.com/recipes/1')
+  console.log(a.data.name)
+  const foodname = a.data.name
+  setFood(foodname)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>
+        ポケモンアプリ
+       </h1>
+       <div>
+        {food}
+       </div>
+       <button onClick={getRecipe}>レシピ取得</button>
     </div>
   );
 }
