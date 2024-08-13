@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.sample {
+  height: 100px;
+  width: 100px;
+  background-color:#61dafb;
+  border-radius: 8px;
+}
+
+.sample-box {
+  height: 50px;
+  width: 50px;
+  background-color: antiquewhite;
+  border-radius: 6px
+}
