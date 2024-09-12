@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 
 function App() {
-  const [name, setName] = useState('ここに表示されます');
-  const [height, setHeight] = useState('ここに表示されます');
+  const [name, setName] = useState('ポケモン');
+  const [height, setHeight] = useState('ポケモンの大きさ');
   const [frontImageUrl, setFrontImageUrl] = useState('');
   const [backImageUrl, setBackImageUrl] = useState('');
   const [sFrontImageUrl, setsFrontImageUrl] = useState('');
