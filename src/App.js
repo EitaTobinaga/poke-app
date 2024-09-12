@@ -35,9 +35,11 @@ function App() {
 
   return (
     <div className="App">
-        <h1>
-        ポケモンアプリ
-        </h1>
+          <div className='タイトル'>
+            <h1>
+            ポケモンアプリ
+            </h1>
+          </div>
           <div className="ポケモン情報用の土地">
             <div className='ポケモン名前用の土地'>
               <h3>ポケモンの名前</h3>
@@ -50,9 +52,14 @@ function App() {
             <div className='通常色ポケモンの画像説明'>
               <h3>通常の姿</h3>
             </div>
-            <div className='通常色ポケモンの画像'>
+            <div className='背景画像'>
+              <img src='https://lohas.nicoseiga.jp/thumb/11004314i?1659147621' alt=''/>
+            </div>
+            <div className='通常色ポケモンの前画像'>
               <img src={frontImageUrl} alt=''/>
-              <img src={backImageUrl} alt=''/>
+            </div>
+            <div className='通常色ポケモンの後画像'>
+            　<img src={backImageUrl} alt=''/>
             </div>
             <div className='色違いポケモンの画像説明'>
               <h3>色違いの姿</h3>
